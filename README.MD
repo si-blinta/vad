@@ -174,7 +174,4 @@ Pour chaque dossier de test, l'analyse se fait en deux temps :
 2.  **Auditivement (Dossier `audio/`) :**
 
       * **C'est la seule vérité.** Écoutez les fichiers `seg_001.wav`, `seg_002.wav`, etc., dans l'ordre.
-      * Est-ce que la phrase est complète ?
       * La coupure est-elle nette ?
-      * Le début ou la fin sont-ils mangés ?
-      * C'est en écoutant que vous validerez les meilleurs paramètres pour votre audio.
