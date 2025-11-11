@@ -122,25 +122,25 @@ Les 3 paramètres (`-a`, `-s`, `-d`) interagissent. Voici comment les régler.
 - Ajustez `-d` en conjonction avec `--silence-ms` (`-s`) et `--aggressiveness` (`-a`) pour affiner la granularité.
 
 Écoutez les fichiers audio. Si vous avez trop de segments très courts qui devraient logiquement être avec la phrase suivante, augmentez cette valeur.
-## 5\. Campagne de Tests (`run_campaign.sh`)
+## 5\. Tests (`test_vad.sh`)
 
-Pour faciliter ces tests, le script `run_campaign.sh` automatise l'exécution de `vad.py` avec 5 combinaisons de paramètres stratégiques.
+Pour faciliter ces tests, le script `test_vad.sh` automatise l'exécution de `vad.py` avec 5 combinaisons de paramètres stratégiques.
 
 **Rendre le script exécutable (une seule fois) :**
 
 ```bash
-chmod +x run_campaign.sh
+chmod +x test_vad.sh
 ```
 
-**Lancer la campagne de tests :**
+**Lancer les tests :**
 
 ```bash
-./run_campaign.sh
+./test_vad.sh
 ```
 
 ### 5.1. Scénarios de Test
 
-Le script créera un dossier `campaign_results/` avec les sous-dossiers suivants :
+Le script créera un dossier `test_vad/` avec les sous-dossiers suivants :
 
 1.  **`01_Standard` (`-a 3 -s 500 -d 1000`) :**
 
